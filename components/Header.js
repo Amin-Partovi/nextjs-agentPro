@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { useTranslation } from "../utility/useTranslation";
 import agentPro from "../public/assets/images/agent.svg";
-import Button from "./button";
+import Button from "./Button";
 import Card from "./Card";
 import background from "../public/assets/images/background.svg";
 
