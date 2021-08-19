@@ -115,7 +115,7 @@ p {
 }
 
 .card {
-  padding: 5rem 1rem;
+  padding: 5rem 1.5rem;
 }
 
 @media screen and (min-width: 576px) {
@@ -288,7 +288,7 @@ p {
   align-items: center;
   max-width: 55rem;
   grid-template-columns: 1fr;
-  margin: 7rem 0;
+  margin: 7rem 0.5rem;
 }
 
 @media screen and (min-width: 576px) {
@@ -349,24 +349,36 @@ p {
 .copyRight {
   display: none;
 }
-.topFooterBackGround {
-  position: absolute;
-  right: 0;
-  transform: translateY(-50%);
-}
-*:lang(fa) .bottomFooterBackground {
-  justify-self: end;
-}
 
-*:lang(en) .bottomFooterBackground {
+@media screen and (max-width: 576px) {
+  .topFooterBackgroundEn {
+    transform: translateY(-50%);
+    position: absolute;
+    right: 0;
+  }
+  .topFooterBackgroundFa {
+    position: absolute;
+    transform: rotateY(180deg) translateY(-50%);
+    left: 0;
+  }
+}
+.bottomFooterBackground {
   justify-self: start;
 }
 
 @media screen and (min-width: 576px) {
   .bottomFooterBackground,
-  .topFooterBackGround {
+  .topFooterBackgroundFa,
+  .topFooterBackgroundEn {
     position: absolute;
     bottom: 0;
+  }
+  .topFooterBackgroundFa {
+    left: 0;
+    transform: rotateY(180deg);
+  }
+  .topFooterBackgroundEn {
+    right: 0;
   }
   .footer {
     grid-template-columns: repeat(7, 1fr);
@@ -407,5 +419,4 @@ p {
 
 .reverseRight {
   transform: rotateY(180deg);
-  right: 0;
 }

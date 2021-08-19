@@ -11,8 +11,8 @@ const Footer = ({ locale }) => {
   return (
     <footer className="footer" id="footer">
       <div
-        className={`topFooterBackGround ${
-          locale === "fa" ? "reverseLeft" : ""
+        className={` ${
+          locale === "fa" ? "topFooterBackgroundFa" : "topFooterBackgroundEn"
         }`}>
         <Image src={topPartBackground} alt="" />
       </div>
