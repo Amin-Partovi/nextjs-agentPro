@@ -23,19 +23,19 @@ const Main = () => {
           <div className="listBox">
             <ul className="list">
               <li>
-                <Image src={prepareIcon} alt={t.prepare} />
+                <Image src={prepareIcon} alt={t.prepare} priority={true} />
                 <strong>{t.prepare}</strong>
               </li>
               <li>
-                <Image src={salesIcon} alt={t.sales} />
+                <Image src={salesIcon} alt={t.sales} priority={true} />
                 <strong>{t.sales}</strong>
               </li>
               <li>
-                <Image src={learnIcon} alt={t.learn} />
+                <Image src={learnIcon} alt={t.learn} priority={true} />
                 <strong>{t.learn}</strong>
               </li>
               <li>
-                <Image src={planIcon} alt={t.plan} />
+                <Image src={planIcon} alt={t.plan} priority={true} />
                 <strong>{t.plan}</strong>
               </li>
             </ul>

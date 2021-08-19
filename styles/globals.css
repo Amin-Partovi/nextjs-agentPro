@@ -311,7 +311,7 @@ p {
 
 .seperator {
   margin: auto;
-  width: 15rem;
+  width: 25rem;
   height: 0.1rem;
   background-color: white;
   opacity: 0.2;
@@ -336,14 +336,14 @@ p {
   grid-column: 1/2;
   position: relative;
   z-index: 1;
-  margin: 7rem 1rem 0 1rem;
+  margin: 7rem 1.5rem 0 1.5rem;
 }
 
 .contactDetail {
   grid-column: 1/2;
   position: relative;
   z-index: 1;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 
 .copyRight {

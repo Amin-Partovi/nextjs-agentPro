@@ -21,7 +21,7 @@ const Header = ({ locale }) => {
       <Card>
         <div className="titleBox">
           <div className="imageWrapper">
-            <Image src={agentPro} alt={t.agentPro} />
+            <Image src={agentPro} alt={t.agentPro} priority={true} />
           </div>
           <h4>
             <b>&nbsp;{t.agentPro}</b>
@@ -48,7 +48,7 @@ const Header = ({ locale }) => {
       </Card>
       <div
         className={`headerBackground ${locale === "fa" ? "reverseLeft" : ""}`}>
-        <Image src={background} alt="" />
+        <Image src={background} alt="" priority={true} />
       </div>
     </header>
   );
