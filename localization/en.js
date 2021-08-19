@@ -1,0 +1,25 @@
+export const en = {
+  agentPro: "AgentPro",
+  insurances: "Insurance Brokers",
+  introduction:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+  signin: "SIGNING IN",
+  contact: "BE IN CONTACT WITH US",
+  services: "Our Services",
+  servicesDescription: "Full Integration of Agents and Digital Channels",
+  prepare: "Prepare",
+  sales: "Sales",
+  learn: "Learn",
+  plan: "Plan",
+  slogan: "‌Build The Future",
+  mainText:
+    "AgentPro  is an Insurance Sales Community Enrichment Open Platform. It’s a gamified process upon Learning, Planning, Preparation and Sales activities based on the maturity level in the life cycle of sale agent, broker or dealer. AgentPro provides all the players with the default means to run their business with the focus of delivering results instead of managing the formalities.",
+  tel: "Tel: ",
+  telContent: "+98 9100 1369",
+  address: "Address: ",
+  addressContent: "No 22 , Avesta avenue , Seykh bahayee , Tehran , Iran",
+  email: "Email: ",
+  emailContent: "contact@agentpro.services",
+  copy: "© 2020 AgentPro. All Rights Reserved.",
+  keywords: "insurance, broker, plan",
+};

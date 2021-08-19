@@ -1,9 +1,85 @@
-html,
-body {
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../public/assets/fonts/montserrat-v18-latin-regular.ttf")
+      format("ttf"),
+    url("../public/assets/fonts/montserrat-v18-latin-regular.eot") format("eot"),
+    url("../public/assets/fonts/montserrat-v18-latin-regular.woff")
+      format("woff"),
+    url("../public/assets/fonts/montserrat-v18-latin-regular.woff2")
+      format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: "IranSans";
+  src: url("../public/assets/fonts/IRANSansWeb.ttf") format("ttf"),
+    url("../public/assets/fonts/IRANSansWeb.woff") format("woff"),
+    url("../public/assets/fonts/IRANSansWeb.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+0500- U+08FF;
+}
+
+* {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+*:lang(fa) {
+  font-family: IranSans, sans-serif;
+}
+
+*:lang(en) {
+  font-family: Montserrat, sans-serif;
+}
+
+button,
+input,
+select {
+  outline: none;
+}
+
+button:focus,
+input:focus,
+select:focus {
+  outline: none;
 }
 
 a {
@@ -11,6 +87,325 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 1.125rem;
+  line-height: 2rem;
+  opacity: 0.6;
+}
+
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #404e40;
+  --secondary-color: #d3b380;
+  --tretiary-color: #333335;
+  --background-color1: #384341;
+  --background-color2: #1b2c28;
+  --text-color: #ffffff;
+}
+
+.container {
+  background-image: radial-gradient(
+    var(--background-color1),
+    var(--background-color2)
+  );
+  color: var(--text-color);
+}
+
+.card {
+  padding: 5rem 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .card {
+    padding: 5rem 5rem;
+  }
+}
+
+.normalBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: var(--secondary-color);
+  border-radius: 3.1rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.outlineBtn {
+  border: 0.1rem solid var(--secondary-color);
+  background-color: transparent;
+  color: var(--secondary-color);
+  border-radius: 3.1rem;
+  padding: 1.5rem 2rem;
+}
+
+.selectLng {
+  position: absolute;
+  top: 1.5rem;
+  right: 5rem;
+  appearance: none;
+  padding: 10px;
+  width: 1.5rem;
+  background: transparent;
+  background-image: url("../public/assets/images/global.svg");
+  background-repeat: no-repeat;
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* -------header------- */
+
+.headerBackground {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 50rem;
+}
+
+.imageWrapper {
+  width: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.titleBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.titleBox > h4 {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 576px) {
+  .titleBox {
+    justify-content: start;
+  }
+}
+
+.introBox {
+  margin: 10rem 0 9rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+.introBox > h1 {
+  font-size: 5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .introBox {
+    margin: 18rem 0;
+  }
+}
+
+.buttonBox {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 576px) {
+  .buttonBox {
+    flex-direction: row;
+  }
+}
+
+.space {
+  width: 2rem;
+}
+
+.intro {
+  max-width: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* -------main------- */
+
+.services {
+  background-image: url("../public/assets/images/mainBackground.svg");
+}
+
+.servicesTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicesTitle > h3 {
+  font-size: 1.5rem;
+}
+
+.listBox {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 15rem));
+  max-width: 60rem;
+  row-gap: 5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .list {
+    grid-template-columns: repeat(4, minmax(10rem, 15rem));
+  }
+}
+
+.list > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.125rem;
+}
+
+.list > li > strong {
+  margin-top: 1rem;
+}
+
+.sloganBox {
+  display: flex;
+  justify-content: center;
+}
+
+.slogan {
+  display: grid;
+  align-items: center;
+  max-width: 55rem;
+  grid-template-columns: 1fr;
+  margin: 7rem 0;
+}
+
+@media screen and (min-width: 576px) {
+  .slogan {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+.slogan > h1 {
+  padding: 1rem;
+  font-size: 5rem;
+  color: var(--secondary-color);
+}
+
+.slogan > p {
+  padding: 1rem;
+}
+
+/* ----------seperator---------- */
+
+.seperator {
+  margin: auto;
+  width: 15rem;
+  height: 0.1rem;
+  background-color: white;
+  opacity: 0.2;
+}
+
+/* -----------footer---------- */
+.footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.contactBox {
+  position: relative;
+  z-index: 1;
+}
+
+.contact {
+  color: var(--secondary-color);
+  font-size: 3.125rem;
+  grid-column: 1/2;
+  position: relative;
+  z-index: 1;
+  margin: 7rem 1rem 0 1rem;
+}
+
+.contactDetail {
+  grid-column: 1/2;
+  position: relative;
+  z-index: 1;
+  margin: 1rem;
+}
+
+.copyRight {
+  display: none;
+}
+.topFooterBackGround {
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+}
+*:lang(fa) .bottomFooterBackground {
+  justify-self: end;
+}
+
+*:lang(en) .bottomFooterBackground {
+  justify-self: start;
+}
+
+@media screen and (min-width: 576px) {
+  .bottomFooterBackground,
+  .topFooterBackGround {
+    position: absolute;
+    bottom: 0;
+  }
+  .footer {
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: start;
+  }
+
+  .contact {
+    grid-column: 4/7;
+  }
+
+  .contactDetail {
+    grid-column: 4/8;
+    margin: 1rem 1rem 7rem 1rem;
+  }
+
+  .copyRight {
+    display: block;
+    grid-column: 5/8;
+    font-size: 1rem;
+    opacity: 0.2;
+    direction: ltr;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    grid-column: 4/6;
+  }
+}
+
+/* -----locale dependent------- */
+
+.reverseLeft {
+  transform: rotateY(180deg);
+  left: 0;
+}
+
+.reverseRight {
+  transform: rotateY(180deg);
+  right: 0;
 }
