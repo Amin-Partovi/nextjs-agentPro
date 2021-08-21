@@ -16,7 +16,9 @@ export default function Home() {
       <Head>
         <title>{t.agentPro}</title>
         <meta name="description" content={t.insurances} />
-        <meta name="keywords" content={t.keywords}></meta>
+        <meta name="keywords" content={t.keywords} />
+        <meta property="og:image" content="/icon.svg" />
+        <meta property="og:image:secure_url" content="/icon.svg" />
         <link rel="icon" href="/icon.svg" />
       </Head>
       <Header locale={locale} />
