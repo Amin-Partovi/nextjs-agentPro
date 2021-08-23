@@ -8,8 +8,9 @@ import prepareIcon from "../public/assets/images/prepare.svg";
 import salesIcon from "../public/assets/images/sales.svg";
 import Card from "../components/Card";
 
-const Main = () => {
+const Main = ({ locale }) => {
   const t = useTranslation();
+  console.log(locale);
   return (
     <main>
       <div className="services">
@@ -21,7 +22,7 @@ const Main = () => {
             <p>{t.servicesDescription}</p>
           </div>
           <div className="listBox">
-            <ul className="list">
+            <ul className="list slider bottom">
               <li>
                 <Image src={prepareIcon} alt={t.prepare} priority={true} />
                 <strong>{t.prepare}</strong>
@@ -44,10 +45,12 @@ const Main = () => {
       </div>
       <div className="sloganBox">
         <section className="slogan">
-          <h1>
+          <h1 className={`slider ${locale === "fa" ? "right" : "left"}`}>
             <b>{t.slogan}</b>
           </h1>
-          <p>{t.mainText}</p>
+          <p className={`slider ${locale === "fa" ? "left" : "right"}`}>
+            {t.mainText}
+          </p>
         </section>
       </div>
     </main>

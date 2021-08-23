@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/dist/client/router";
+import { animation } from "../utility/animation";
 
 export const PageLayout = ({ children }) => {
   const { locale } = useRouter();
+
+  useEffect(() => {
+    animation();
+  }, []);
 
   return (
     <div dir={locale === "en" ? "ltr" : "rtl"} className="container">

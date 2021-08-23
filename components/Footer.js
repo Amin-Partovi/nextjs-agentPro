@@ -17,10 +17,10 @@ const Footer = ({ locale }) => {
         <Image src={topPartBackground} alt="" />
       </div>
 
-      <h1 className="contact">
+      <h1 className="contact fade">
         <b>{t.contact}</b>
       </h1>
-      <div className="contactDetail">
+      <div className="contactDetail slider bottom">
         <p>
           <strong>{t.tel}</strong>
           {t.telContent}

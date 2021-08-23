@@ -90,7 +90,7 @@ a {
 p {
   font-size: 1.125rem;
   line-height: 2rem;
-  opacity: 0.6;
+  color: var(--p-color);
 }
 
 * {
@@ -104,6 +104,7 @@ p {
   --background-color1: #384341;
   --background-color2: #1b2c28;
   --text-color: #ffffff;
+  --p-color: #909995;
 }
 
 .container {
@@ -419,4 +420,43 @@ p {
 
 .reverseRight {
   transform: rotateY(180deg);
+}
+
+/* -----animation------- */
+
+.fade {
+  opacity: 0;
+}
+
+.fade.appear {
+  opacity: 1;
+  transition: opacity 700ms ease-in;
+}
+
+.right {
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+.left {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+.left.appear,
+.right.appear {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 600ms ease-in-out, opacity 700ms ease-in;
+}
+
+.bottom {
+  transform: translateY(80px);
+  opacity: 0;
+}
+
+.bottom.appear {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: transform 600ms ease-in-out, opacity 700ms ease-in;
 }

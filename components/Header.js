@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 
 import { useTranslation } from "../utility/useTranslation";
@@ -19,8 +19,8 @@ const Header = ({ locale }) => {
   return (
     <header className="header">
       <Card>
-        <div className="titleBox">
-          <div className="imageWrapper">
+        <div className="titleBox slider bottom">
+          <div className="imageWrapper ">
             <Image src={agentPro} alt={t.agentPro} priority={true} />
           </div>
           <h4>
@@ -28,14 +28,14 @@ const Header = ({ locale }) => {
           </h4>
         </div>
         <div className="introBox">
-          <h1>
+          <h1 className="fade">
             <b>{t.insurances}</b>
           </h1>
           <div className="intro">
-            <p>{t.introduction}</p>
+            <p className="fade">{t.introduction}</p>
           </div>
 
-          <div className="buttonBox">
+          <div className="buttonBox fade">
             <Button>
               <a href="https://panel.pejwakbaran.com/login">{t.signin}</a>
             </Button>

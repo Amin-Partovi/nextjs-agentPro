@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/icon.svg" />
       </Head>
       <Header locale={locale} />
-      <Main />
+      <Main locale={locale} />
       <Seperator />
       <Footer locale={locale} />
     </div>
