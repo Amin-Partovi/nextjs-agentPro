@@ -430,7 +430,7 @@ p {
 
 .fade.appear {
   opacity: 1;
-  transition: opacity 700ms ease-in;
+  transition: opacity 800ms ease-in-out;
 }
 
 .right {
@@ -447,16 +447,23 @@ p {
 .right.appear {
   transform: translateX(0);
   opacity: 1;
-  transition: transform 600ms ease-in-out, opacity 700ms ease-in;
+  transition: transform 800ms ease-out, opacity 800ms ease-in;
 }
 
 .bottom {
-  transform: translateY(80px);
+  transform: translateY(50px);
   opacity: 0;
 }
 
 .bottom.appear {
   transform: translateY(0px);
   opacity: 1;
-  transition: transform 600ms ease-in-out, opacity 700ms ease-in;
+  transition: transform 800ms ease-out, opacity 800ms ease-in-out;
+}
+
+.transition-delay-long {
+  transition-delay: 1000ms;
+}
+.transition-delay-short {
+  transition-delay: 4000ms;
 }

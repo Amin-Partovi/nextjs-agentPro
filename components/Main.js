@@ -10,7 +10,6 @@ import Card from "../components/Card";
 
 const Main = ({ locale }) => {
   const t = useTranslation();
-  console.log(locale);
   return (
     <main>
       <div className="services">

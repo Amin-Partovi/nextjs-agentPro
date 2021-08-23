@@ -19,7 +19,7 @@ const Header = ({ locale }) => {
   return (
     <header className="header">
       <Card>
-        <div className="titleBox slider bottom">
+        <div className="titleBox slider transition-delay-long bottom">
           <div className="imageWrapper ">
             <Image src={agentPro} alt={t.agentPro} priority={true} />
           </div>
@@ -28,7 +28,10 @@ const Header = ({ locale }) => {
           </h4>
         </div>
         <div className="introBox">
-          <h1 className="fade">
+          <h1
+            className={`slider transform-delay-short ${
+              locale === "fa" ? "right" : "left"
+            }`}>
             <b>{t.insurances}</b>
           </h1>
           <div className="intro">
