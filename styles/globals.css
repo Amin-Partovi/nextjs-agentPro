@@ -447,7 +447,8 @@ p {
 .right.appear {
   transform: translateX(0);
   opacity: 1;
-  transition: transform 800ms ease-out, opacity 800ms ease-in;
+  transition: transform 800ms, opacity 800ms ease-in;
+  transition-timing-function: cubic-bezier(0, 0.2, 0.3, 1);
 }
 
 .bottom {

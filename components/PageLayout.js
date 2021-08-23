@@ -7,7 +7,7 @@ export const PageLayout = ({ children }) => {
 
   useEffect(() => {
     animation();
-  }, []);
+  }, [locale]);
 
   return (
     <div dir={locale === "en" ? "ltr" : "rtl"} className="container">
