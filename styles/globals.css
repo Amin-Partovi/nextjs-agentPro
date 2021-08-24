@@ -97,6 +97,12 @@ p {
   color: var(--p-color);
 }
 
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 1.25rem;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -108,7 +114,7 @@ p {
   --background-color1: #384341;
   --background-color2: #1b2c28;
   --text-color: #ffffff;
-  --p-color: #9ca3a0;
+  --p-color: #c8cac9;
 }
 
 .container {
@@ -221,6 +227,10 @@ p {
   display: flex;
   margin-top: 1rem;
   flex-direction: column;
+}
+
+.button {
+  font-size: 1.3rem !important;
 }
 
 @media screen and (min-width: 576px) {

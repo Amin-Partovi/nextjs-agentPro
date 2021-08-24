@@ -40,11 +40,13 @@ const Header = ({ locale }) => {
 
           <div className="buttonBox fade">
             <Button>
-              <a href="https://panel.pejwakbaran.com/login">{t.signin}</a>
+              <a className="button" href="https://panel.pejwakbaran.com/login">
+                {t.signin}
+              </a>
             </Button>
             <span className="space" />
             <Button outline onClick={handleContactUs}>
-              {t.contact}
+              <span className="button">{t.contact}</span>
             </Button>
           </div>
         </div>
