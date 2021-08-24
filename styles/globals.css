@@ -62,9 +62,9 @@
   list-style: none;
 }
 
-* {
+/* * {
   overflow-x: hidden;
-}
+} */
 
 *:lang(fa) {
   font-family: IranSans, sans-serif;
@@ -108,7 +108,7 @@ p {
   --background-color1: #384341;
   --background-color2: #1b2c28;
   --text-color: #ffffff;
-  --p-color: #909995;
+  --p-color: #9ca3a0;
 }
 
 .container {
@@ -242,8 +242,11 @@ p {
 .services {
   position: relative;
   background-image: url("../public/assets/images/mainBackground.svg");
-  z-index: 1;
   background-color: #37413f;
+}
+
+.services > .card {
+  z-index: 1;
 }
 
 .servicesTitle {
@@ -388,6 +391,7 @@ p {
   }
   .topFooterBackgroundEn {
     right: 0;
+    z-index: 1;
   }
   .footer {
     grid-template-columns: repeat(7, 1fr);
