@@ -293,6 +293,7 @@ p {
 .sloganBox {
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .slogan {
@@ -301,6 +302,7 @@ p {
   max-width: 55rem;
   grid-template-columns: 1fr;
   margin: 7rem 0.5rem;
+
 }
 
 @media screen and (min-width: 576px) {
