@@ -203,6 +203,7 @@ p {
   margin: 10rem 0 7rem 0;
   position: relative;
   z-index: 2;
+  overflow-x: hidden;
 }
 
 .introBox > h1 {
