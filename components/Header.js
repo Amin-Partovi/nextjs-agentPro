@@ -49,10 +49,10 @@ const Header = ({ locale }) => {
           </div>
         </div>
       </Card>
-      <div
+      {/* <div
         className={`headerBackground ${locale === "fa" ? "reverseLeft" : ""}`}>
         <Image src={background} alt="" priority={true} />
-      </div>
+      </div> */}
     </header>
   );
 };

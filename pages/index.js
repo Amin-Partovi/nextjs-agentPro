@@ -6,6 +6,7 @@ import Main from "../components/Main";
 import Footer from "../components/Footer";
 import { useTranslation } from "../utility/useTranslation";
 import Seperator from "../components/Seperator";
+import Geometries from "../components/Geometries";
 
 export default function Home() {
   const t = useTranslation();
@@ -21,6 +22,7 @@ export default function Home() {
         <meta property="og:image:secure_url" content="/icon.svg" />
         <link rel="icon" href="/icon.svg" />
       </Head>
+      <Geometries locale={locale} />
       <Header locale={locale} />
       <Main locale={locale} />
       <Seperator />
@@ -28,3 +30,5 @@ export default function Home() {
     </div>
   );
 }
+
+
