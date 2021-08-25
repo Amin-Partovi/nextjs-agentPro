@@ -186,12 +186,9 @@ p {
 }
 
 .selectLng {
-  position: absolute;
-  top: 1.5rem;
-  right: 5rem;
   appearance: none;
-  padding: 10px;
-  width: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   background: transparent;
   background-image: url("../public/assets/images/global.svg");
   background-repeat: no-repeat;
@@ -200,9 +197,29 @@ p {
   cursor: pointer;
 }
 
+@media screen and (min-width: 576px) {
+  .selectLng {
+    right: 5rem;
+  }
+}
+
+.reverse {
+  left: 1.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .reverse {
+    left: 5rem;
+  }
+}
+
 /* -------header------- */
 .header {
   overflow-x: hidden;
+}
+.lngContainer {
+  display: flex;
+  justify-content: space-between;
 }
 .headerBackground {
   position: absolute;
@@ -222,18 +239,10 @@ p {
   display: flex;
   align-items: center;
   z-index: 2;
-  margin-top: 1rem;
-  justify-content: center;
 }
 
 .titleBox > h4 {
   font-size: 1.3rem;
-}
-
-@media screen and (min-width: 576px) {
-  .titleBox {
-    justify-content: start;
-  }
 }
 
 .introBox {

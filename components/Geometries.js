@@ -224,13 +224,11 @@ const Geometries = ({ locale }) => {
       mouse.y =
         -((event.clientY + window.scrollY) / container.clientHeight) * 2 + 1;
 
-      // console.log(mouse.y);
     }
 
     const onWindowResize = () => {
       // camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
-      console.log(window.innerHeight);
 
       // if (window.innerWidth < 576) {
       //   scene.scale.set(0.8, 0.8, 0.8);

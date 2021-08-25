@@ -5,7 +5,7 @@ import { useTranslation } from "../utility/useTranslation";
 import agentPro from "../public/assets/images/agent.svg";
 import Button from "./Button";
 import Card from "./Card";
-import background from "../public/assets/images/background.svg";
+import { LngChanger } from "./LngChanger";
 
 const Header = ({ locale }) => {
   const t = useTranslation();
@@ -19,13 +19,16 @@ const Header = ({ locale }) => {
   return (
     <header className="header">
       <Card>
-        <div className="titleBox slider transition-delay-long bottom">
-          <div className="imageWrapper ">
-            <Image src={agentPro} alt={t.agentPro} priority={true} />
+        <div className="lngContainer">
+          <div className="titleBox slider transition-delay-long bottom">
+            <div className="imageWrapper ">
+              <Image src={agentPro} alt={t.agentPro} priority={true} />
+            </div>
+            <h4>
+              <b>&nbsp;{t.agentPro}</b>
+            </h4>
           </div>
-          <h4>
-            <b>&nbsp;{t.agentPro}</b>
-          </h4>
+          <LngChanger />
         </div>
         <div className="introBox">
           <h1

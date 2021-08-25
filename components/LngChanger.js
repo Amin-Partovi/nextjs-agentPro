@@ -3,6 +3,7 @@ import { useRouter } from "next/dist/client/router";
 
 export const LngChanger = () => {
   const router = useRouter();
+  const { locale } = useRouter();
 
   const handleChangeLng = e => {
     if (e.target.value === "fa") {
@@ -13,7 +14,10 @@ export const LngChanger = () => {
   };
 
   return (
-    <select className="selectLng" onChange={handleChangeLng} value="">
+    <select
+      className={`selectLng ${locale === "fa" ? "reverse" : ""}`}
+      onChange={handleChangeLng}
+      value="">
       <option value="" hidden></option>
       <option value="fa">fa</option>
       <option value="en">en</option>
