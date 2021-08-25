@@ -45,14 +45,43 @@
 }
 
 @font-face {
-  font-family: "IranSans";
-  src: url("../public/assets/fonts/IRANSansWeb.ttf") format("ttf"),
-    url("../public/assets/fonts/IRANSansWeb.woff") format("woff"),
-    url("../public/assets/fonts/IRANSansWeb.woff2") format("woff2");
+  font-family: Sahel;
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  unicode-range: U+0500- U+08FF;
+  font-weight: bold;
+  src: url("../public/assets/fonts/Sahel-Bold-FD.eot");
+  src: url("../public/assets/fonts/Sahel-Bold-FD.woff") format("woff"),
+    url("../public/assets/fonts/Sahel-Bold-FD.woff2") format("woff2"),
+    url("../public/assets/fonts/Sahel-Bold-FD.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Sahel;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../public/assets/fonts/Sahel-FD.eot");
+  src: url("../public/assets/fonts/Sahel-FD.woff") format("woff"),
+    url("../public/assets/fonts/Sahel-FD.woff2") format("woff2"),
+    url("../public/assets/fonts/Sahel-FD.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Sahel;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../public/assets/fonts/Sahel-Black-FD.eot");
+  src: url("../public/assets/fonts/Sahel-Black-FD.woff") format("woff"),
+    url("../public/assets/fonts/Sahel-Black-FD.woff2") format("woff2"),
+    url("../public/assets/fonts/Sahel-Black-FD.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Sahel;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../public/assets/fonts/Sahel-SemiBold-FD.eot");
+  src: url("../public/assets/fonts/Sahel-SemiBold-FD.woff") format("woff"),
+    url("../public/assets/fonts/Sahel-SemiBold-FD.woff2") format("woff2"),
+    url("../public/assets/fonts/Sahel-SemiBold-FD.ttf") format("truetype");
 }
 
 * {
@@ -67,7 +96,7 @@
 } */
 
 *:lang(fa) {
-  font-family: IranSans, sans-serif;
+  font-family: Sahel, sans-serif;
 }
 
 *:lang(en) {
